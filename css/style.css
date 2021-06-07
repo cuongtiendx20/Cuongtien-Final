@@ -1,0 +1,52 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 600px;
+	height: 600px;
+	background: grey;
+	margin: 0 auto;
+	padding: 50px;
+	display: flex;
+}
+section{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.box{
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+.rotate{
+	transition: all .3s .2s linear;
+}
+.rotate:hover{
+	transform: rotate(360deg);
+	background: blue;
+	border-radius: 50%;
+}
+.scale{
+	transition: transform 1s, background 2s, border 3s
+}
+.scale:hover{
+	transform: scale(1.2,0.8);
+	background: rgba(20,95,255,1.00);
+	border: 2px solid white;
+}
+.skew{
+	transition: all 3s;
+}
+.skew:hover{
+	transform: skew(30deg,50deg) scale(0.5);
+	transition: all 5s;
+}
+.translate{
+	transition: all 2s;
+}
+.translate:hover{
+	transform: translate(50px,50px) rotate(360deg) scale(1.2)
+}
